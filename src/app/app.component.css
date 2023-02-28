@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.bg-img{
+  background-color: rgb(18, 65, 145);
+  height: 100vh;
+}
+ .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 350px;
+  height: 400px;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+  h1{
+    color: rgb(18, 65, 145);
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+  }
+#label{
+  text-align: center;
+  color: black;
+  font-size: 33px;
+  font-weight: lighter;
+  margin: 5px;
+  font-family: sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+  margin-top: 3vh;
+  
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+  padding: 1px;
+  text-align: start;
+  padding-left: 45px;
+}
+.field .icon{
+    position: absolute;
+}
+.icon {
+    padding: 10px;
+    min-width: 30px;
+}
+.psicon {
+    position: absolute;
+    left: 300px;
+}
+
+/* forget password */
+.pass{
+  text-align: right;
+  margin: 10px 0;
+}
+.pass a{
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+  color:  #3498db;
+}
+
+
+label{
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+  position: relative;
+  padding-top: 9px;
+  margin: 4px;
+  display: inline-block;
+}
+
+.btn{
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+.error{
+  color: rgb(231, 83, 83);
+  font-family: 'Poppins',sans-serif;
+  float: left;
+  margin: 4px;
+}
+input.ng-invalid.ng-touched {
+    border: red 1px solid;
+}
